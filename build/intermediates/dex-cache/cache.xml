@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="421b36cf4f0d3bbd75e8f28647fccf36674ef049">
+        <dex dex="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.2.1_e39d1dacdd122cb61bbbd816b1c749429aa51bd0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.1.1_1a4b4117709c114f967cf103592917564ad0cc8f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="bbd51be332bace144b3d16501ec0af379c3c8750">
+        <dex dex="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-9.2.1_a0b3b17af24b5c71c3d65ca257968d8b60de9552/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="b480105efa476708ff81e77059787363d0221f47">
+        <dex dex="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_89805dff28f8ac221dcd3f43e13a2018b6cb51d6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.1.1_28e41527543f5973e501be561da07f335c3dd35c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="a063137b7e81b40777c120e5512c5c0a28a10c1b">
+        <dex dex="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_8621022bf80d30e92d0b170ef4258f84aa8e9b9e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/exploded-aar/com.androidplot/androidplot-core/1.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="6821fd5ac5082b495c9dd9bc91c43db3f9ee98ed">
+        <dex dex="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.androidplot-androidplot-core-1.0.0_2d5bbf125ec714dd30c542862d1ea3e79f1aa4e0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/libs/microsoft-band-1.3.10929.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="fc45a6f0a8705352b5bc3fa319ab7e7b585190c6">
+        <dex dex="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/transforms/dex/debug/folders/1000/2/microsoft-band-1.3.10929.1_caf9d0cd2cb1fe016bac21b100492d9737f86aa3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/exploded-aar/edu.umass.cs.MHLClient/mhlclient/2.3.3/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="8caf922742ddc4d72cfacbc2dd17b8e099b144f7">
+        <dex dex="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/transforms/dex/debug/folders/1000/10/edu.umass.cs.MHLClient-mhlclient-2.3.3_dcfb2bd879a4f57664200ee37dda95fd073c45a3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.1.1_b3937797c1d1beae85b51f44db78e12b32e4c0a3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/exploded-aar/com.android.support/design/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="e195bd694d5389acfba27ff4fdfa64c4c65b2c05">
+        <dex dex="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.1.1_5807dbf8e1da8f9b092833de986f55cc9b34c382/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/libs/internal_impl-24.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.1.1_68d9b7180a46d067ccb5377a62223e0b6548bc30/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Xin/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.1.1/support-annotations-24.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.1.1_02583dbca41365dc5bd15dc2b36a11e502e40d0a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/libs/AudioFeatureExtraction.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="c034a7f52d20ea81eaceed748ee6af9b94302772">
+        <dex dex="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/transforms/dex/debug/folders/1000/2/AudioFeatureExtraction_832aacd1a4afa1f6173f8bdf0e161d2e9f5d35cb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.1.1_a888520d9ef1935299c94f7c87e75a28e7e0da9f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Applications/Android Studio.app/Contents/gradle/m2repository/commons-io/commons-io/2.4/commons-io-2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
+        <dex dex="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/transforms/dex/debug/folders/1000/10/commons-io-2.4_db9d9c7f5dc9abc44c05f9a56b43532b2a4af315/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="819c2c3a4fb135e085445d11131d069cf9c32b2a">
+        <dex dex="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.2.1_e142636674a38ebe4bd5e408fdf5b205299ea42b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="6b896c1067633db41e9c10a3a5d0919c5c4cfc8c">
+        <dex dex="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.2.1_0232e6c359fd9d5822ea324f2c9a2ad3c2a295eb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/exploded-aar/com.android.support/support-v13/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="327f68d58bb39fb8b585150596b313541f8fdb87">
+        <dex dex="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v13-24.1.1_eeb8e279e704a090448156f0e13cad7cdbcb163b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="787871951412550519b0222aba3c9df4cea49875">
+        <dex dex="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.1.1_1ce9e54f0b56de3daa34a45b97a6fbe1cd71b9c2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/exploded-aar/com.android.support/support-v13/24.1.1/jars/libs/internal_impl-24.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="ca74722504f90166103d01edcdfdb93192eb1cba">
+        <dex dex="/Users/Xin/Documents/cs390mb/hw4/My-Activities/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.1.1_f7a548ea62008ca5c81099eeae5eaeb54060d20c/classes.dex" />
+    </item>
+
+</items>

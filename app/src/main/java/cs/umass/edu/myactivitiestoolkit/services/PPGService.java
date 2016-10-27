@@ -61,23 +61,20 @@ public class PPGService extends SensorService implements PPGListener
     private HeartRateCameraView mPPGSensor;
 
     //Filter bufferingFilter = new Filter(5.0);
-    Filter smoothFilter = new Filter(2.0);
+    Filter bufferFilter = new Filter(2.0);
+    Filter smoothFilter = new Filter(2);
 
     int dataCounter = 0;
     int peak = 0;
     int finalPeak = 0;
-    private final String  NATURAL = "natural";
     private final String INCREASING = "increasing";
     private final String DECREASING = "decreasing";
     String status = INCREASING;
     long startTime = 0;
     long finishTime = 0;
     float constant = 0;
-
-    Queue<Integer> windowsQueue = new LinkedList<Integer>();
-    Queue<Constants.TIMESTAMPS> peakQueue = new LinkedList<Constants.TIMESTAMPS>();
-   // ArrayList<Integer> signalArray = new ArrayList<Integer>();
     double[] signalArray = new double[121];
+    ArrayList<Integer> averageBpm = new ArrayList<Integer>();
     @Override
     protected void start() {
         Log.d(TAG, "START");
@@ -181,31 +178,57 @@ public class PPGService extends SensorService implements PPGListener
     @Override
     public void onSensorChanged(PPGEvent event) {
         // TODO: Smooth the signal using a Butterworth / exponential smoothing filter
-        //double[] filterBuffValues = bufferingFilter.getFilteredValues((float) event.value);
-        double[] filterSmoothValue = smoothFilter.getFilteredValues((float) event.value);
-       // double[] filterBuffValues = bufferingFilter.getFilteredValues((float) filterSmoothValue[0]);
         // TODO: send the data to the UI fragment for visualization, using broadcastPPGReading(...)
-        // long timestamp_in_milliseconds = (long) ((double) event.timestamp / Constants.TIMESTAMPS.NANOSECONDS_PER_MILLISECOND);
-        broadcastPPGReading(event.timestamp,filterSmoothValue[0]);
         // TODO: Send the filtered mean red value to the server
-        PPGSensorReading reading = new PPGSensorReading(mUserID,"Mobile","",event.timestamp,filterSmoothValue[0]);
-        mClient.sendSensorReading(reading);
         // TODO: Buffer data if necessary for your algorithm
         // TODO: Call your heart beat and bpm detection algorithm
+        // TODO: Send your heart rate estimate to the server
+        double[] filterBufferValue = bufferFilter.getFilteredValues((float)event.value);
+        double[] filterSmoothValue = smoothFilter.getFilteredValues((float) filterBufferValue[0]);
+
+        broadcastPPGReading(event.timestamp,filterSmoothValue[0]);
+        PPGSensorReading reading = new PPGSensorReading(mUserID,"Mobile","",event.timestamp,filterSmoothValue[0]);
+        mClient.sendSensorReading(reading);
+
         if(dataCounter == 0){
             startTime = event.timestamp;
         }
 
+        //Calculate the duration of one min.
         if(dataCounter == 120){
             finishTime = event.timestamp;
             constant = 1/ ((float)(finishTime-startTime)/(float)(60000));
+            averageBpm.add(finalPeak);
         }
 
         calBMP(filterSmoothValue[0]);
-        broadcastPeak(event.timestamp,(double)(peak));
-        broadcastBPM((int)(finalPeak*constant));
-        // TODO: Send your heart rate estimate to the server
+        broadcastBPM((int)((averageArrayList(averageBpm))*constant));
+        HRSensorReading readingBmp = new HRSensorReading(mUserID,"Mobile","",event.timestamp,
+                ((averageArrayList(averageBpm))*constant));
+        mClient.sendSensorReading(readingBmp);
+
+
     }
+
+
+
+
+    private int averageArrayList(List <Integer> array){
+        if(array.size() == 0){
+            return 0;
+        }else if (array.size() <= 3){
+            return array.get(array.size()-1);
+        }else{
+            int sum = 0 ;
+            for(int i = array.size()-1;i >= array.size()-3;i-- ){
+                sum = sum + array.get(i);
+            }
+            return sum/3;
+        }
+    }
+
+
+
 
     private float[] convertToFloatArray(double[] doubleArray) {
         float[] floatArray = new float[doubleArray.length];
@@ -255,33 +278,7 @@ public class PPGService extends SensorService implements PPGListener
     }
 
 
-
-    /*
-    public void calBMP (PPGEvent event){
-        if(dataCounter<60){
-            windowsQueue.add(new Integer((int)event.value));
-            dataCounter++;
-            if(event.value < windowsQueue.peek() && status == INCREASING){
-                peak++;
-                peakQueue.add(Constants.TIMESTAMPS);
-                status = DECREASING;
-            }else{
-                status = INCREASING;
-            }
-        }else {
-            if(event.value < windowsQueue.peek() && status == INCREASING){
-                peak++;
-                peakQueue.add(Constants.TIMESTAMPS);
-                status = DECREASING;
-            }else{
-                status = INCREASING;
-            }
-            windowsQueue.poll();
-            windowsQueue.add(new Integer((int) event.value));
-        }
-    }
-*/
-
+    //select 120 events as a sample to calculate peaks in this sample
     public void calBMP(double value){
         if(dataCounter == 120){
             signalArray[119] = value;
